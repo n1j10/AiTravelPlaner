@@ -48,13 +48,16 @@ function Destination() {
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8'>
     
                 {destination?.map((dest, index)=>(
-                    <div key={index} className='flex flex-col items-center text-center p-4 rounded-lg hover:shadow-lg transition duration-300  hover:bg-[#f78547]  group cursor-pointer'>
+                  <Link href="/destinationsList" key={index}>
+                     <div  className='flex flex-col items-center text-center p-4 rounded-lg hover:shadow-lg transition duration-300  hover:bg-[#f78547]  group cursor-pointer'>
                         <Image src={dest.img} width={400} height={400} alt=''/>
                         <h3 className='mt-4 font-semibold text-lg  mb-5 text-[#f78547] group-hover:text-white'>{dest.title}</h3>
     
                    <p className="mt-2 text-gray-500 text-sm group-hover:text-white">{dest.desc}</p>
     
                     </div>
+                  </Link>
+                 
                 ))}
 
                

@@ -116,9 +116,9 @@ function Header() {
     {isOpen && (
         <nav className="sm:hidden px-4 pb-4 flex flex-col gap-3 bg-white shadow-md">
           <Link className="nav-link block" href="">Destination</Link>
-          <Link className="nav-link block" href="">Services</Link>
+          {/* <Link className="nav-link block" href="">Services</Link> */}
           <Link className="nav-link block" href="">Booking</Link>
-          <Link className="nav-link block" href="">Testimonial</Link>
+          {/* <Link className="nav-link block" href="">Testimonial</Link> */}
         </nav>
       )}
 
